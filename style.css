@@ -152,7 +152,7 @@ a, b{
 
 }
 h2{
-    font-family: 'Calibri', cursive;
+    font-family: 'Calibri';
     letter-spacing: 1px;
     font-size: 85px;
     line-height: 95px;
@@ -621,8 +621,17 @@ div.buttons-1 {
     .contribuciones-txt{
         display: block;
         position: center;
+        margin: 0 auto;
+    }
+    .contribuciones-txt > div{
+        margin: 0px auto;
+        width: 350px;
+        height: 300;
     }
     .grupo-txt{
         display: block;
+    }
+    .grupo{
+        margin-bottom: 20px;
     }
 }
