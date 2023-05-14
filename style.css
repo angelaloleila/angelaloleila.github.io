@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & display=swap');
+/*
+familia tipográfica: 'Calibri', cursiva;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+p {
+    color: rgb(187, 186, 186);
+}
+a, b{
+    color: white;
+}
+.container{
+    max-width: 1200x;
+    margin: 0 auto;
+}
+
+.header{
+    background: linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)),
+        url(images/);
+        background-size: cover;
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        height: 100%;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+
+}
+
+.logo{
+    font-size: 24px;
+    color:aliceblue;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+}
+
+.menu .navbar ul li {
+    float: left;
+}
+
+.menu .navbar ul li {
+    font-size: 18px;
+    padding: 20px;
+    color: aliceblue;
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    color: #7a7a7a;
+    transition: .3s;
+}
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+}
+
+.header-txt{
+    width: 70%;
+    align-items: center;
+}
+
+.header-txt h1{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 100px;
+    line-height: 130px;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-family: 'Calibri', cursive;
+    margin: 25px;
+}
+
+.header-txt p{
+    font-size: 18px;
+    color: #c4c4c4;
+    margin-bottom: 35px;
+    border-left: 1px solid #FFFFFF;
+    padding-left: 15px;
+}
+
+.btn-1{
+    display: inline-block;
+    border: 1px solid #FFFFFF;
+    padding: 12px 35px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    color:#FFFFFF;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 25px;
+}
+.btn-1:hover{
+    background-color: #ffffff;
+    color: #000;
+    
+    transition: .3s;
+}
+
+.header.img{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: end
+
+}
+.header-img a{
+    margin-bottom: 40px;
+}
+.tours{
+    padding: 100px 0px;
+    text-align: center;
+    width: 80%;
+    align-items: center;
+
+}
+h2{
+    font-family: 'Calibri', cursive;
+    letter-spacing: 1px;
+    font-size: 85px;
+    line-height: 95px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+
+}
+.p{
+    font-size: 18px;
+    color: #C4C4C4;
+}
+.tour-content{
+    display: flex;
+    justify-content:space-between;
+    margin-top:70px;
+}
+
+.tour-txt h3{
+    font-family: 'Calibri', cursive;
+    font-size: 40px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.tour-txt p{
+    color:#E1E1E1E1 ;
+}
+
+.video {
+    padding: 150px 0px;
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.5)),
+        url(images/bg2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+header.header {
+    padding: 150px 0px;
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.5)),
+        url(images/header.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+.video-content{
+    display: flex;
+    align-items: center;
+}
+.video-1{
+    width: 50%;
+    padding-right: 70px;
+}
+.video-1 > p, .descripcion-1>p {
+    color:white;
+}
+.video-2{
+    width: 50%;
+    padding-right: 70px;
+
+}
+.v1{
+    width: 300px;
+    margin-right: 25px ;
+    border-radius: 10px;
+}
+.v2{
+    width: 300px;
+    border-radius: 10px;
+}
+.footer-bg{
+text-align: center;
+padding: 100px 0;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campo-1{
+    margin-bottom: 15px;
+    width: auto;
+}
+.campo{
+    margin: 5px;
+    padding: 20px 15px;
+    width: 250px;
+    background-color: #0E0E0E0E;
+    border: 1px solid #ffffff;
+    outline: none;
+    border-radius: 10px;
+    color:#FFFFFF;
+    font-size: 14px;
+}
+textarea.campo{
+    width: 100%;
+    margin-left: auto;
+    
+}
+input.campo{
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-txt{
+    text-align: center;
+    padding: 20px;
+    background-color: #161815;
+}
+footer > h2{
+    text-align: center;
+}
+div.video{
+    margin-right: 10%;
+}
+h3{
+    color: white;
+}
+div.flecha-bajar, div.flecha-bajar2{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    transform: translate(-50%, 100%);
+    margin: auto;
+}
+
+div.flecha-bajar:hover, div.flecha-bajar2:hover{
+    transform: translate(-50%, 120%);
+    transition: .4s;
+}
+div.flecha-bajar > img, div.flecha-bajar2 > img{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform: translate(65%, 65%);
+    margin: auto;
+}
+div.flecha-bajar2 > img{
+    transform: translate(0%, 65%);
+}
+div.descripcion-1{
+    width: 500px;
+    margin-bottom: 60px;
+}
+div.video-1, div.cancion-1, div.contribucion-1{
+    margin-left: 2%;
+}
+div.cancion1 > a{
+    margin-bottom: 0;
+}
+section.video, section.cancion, section.contribucion{
+    margin-bottom: 5%;
+}
+div.contribuciones-txt > div{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 12px 35px;
+}
+div.contribuiones.txt{
+    display: flex;
+    flex-direction: row;
+}
+div.contribuciones-txt > div > div{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 12px 35px;
+    margin-right: 2%;
+    margin-top: 1%;
+    display: inline-block;
+    position: relative;
+    bottom: 0px;
+}
+div.contribuciones-txt > div > div:hover{
+    background-color: rgb(228, 228, 228);
+    border: 1px solid rgb(0, 0, 0);
+    transition: .3s;
+    color:#000;
+}
+div.contribuciones-txt > div > div:hover > p{
+    color:#000;
+}
+div.contribuciones-txt > div > div >p{
+    color: white;
+}
+section.contribucion{
+    display: inline-block;
+    width: 80%;
+}
+.contribuciones1{
+    display: inline-block;
+    text-align: center;
+    height: 300px;
+    width: 400px;
+    margin-bottom: 2%;
+} 
+.contribuciones2{
+    display: inline-block;
+    text-align: center;
+    height: 300px;
+    width: 400px;
+}
+.contribuciones-txt {
+    display: grid;
+    grid-template-columns: repeat(3, .3fr);
+    grid-gap: 10px;
+
+}
+.grupo-txt{
+    display: grid;
+    grid-template-columns: repeat(4, .2fr);
+    grid-gap: 10px;
+    justify-content: center;
+}
+.grupo{
+    text-align: center;
+}
+div.objetivos{
+    display: inline-block;
+    position: absolute;
+    margin-left: 1%;
+}
+.fondo{
+    margin-top: 30px;
+}
+/*BOTON VIDEO/CANCION*/
+.buttons {
+    display: flex;
+    width: 500px;
+    gap: 10px;
+    --b: 4px;   
+    --h: 1.8em; 
+  }
+  .buttons button {
+    --_c: #ffffff;
+    flex: calc(1.25 + var(--_s,0));
+    min-width: 0;
+    font-size: 30px;
+    font-weight: bold;
+    height: var(--h);
+    cursor: pointer;
+    color: var(--_c);
+    border: var(--b) solid var(--_c);
+    background: 
+      conic-gradient(at calc(100% - 1.3*var(--b)) 0,var(--_c) 209deg, #0000 211deg) 
+      border-box;
+    clip-path: polygon(0 0,100% 0,calc(100% - 0.577*var(--h)) 100%,0 100%);
+    padding: 0 calc(0.288*var(--h)) 0 0;
+    margin: 0 calc(-0.288*var(--h)) 0 0;
+    box-sizing: border-box;
+    transition: flex .4s;
+  }
+  .buttons button + button {
+    --_c: #ffffff;
+    flex: calc(1.25 + var(--_s,0));
+    background: 
+      conic-gradient(from -90deg at calc(1.3*var(--b)) 100%,var(--_c) 119deg, #0000 121deg) 
+      border-box;
+    clip-path: polygon(calc(0.577*var(--h)) 0,100% 0,100% 100%,0 100%);
+    margin: 0 0 0 calc(-0.288*var(--h));
+    padding: 0 0 0 calc(0.288*var(--h));
+  }
+  .buttons button:focus-visible {
+    outline-offset: calc(-2*var(--b));
+    outline: calc(var(--b)/2) solid #000;
+    background: none;
+    clip-path: none;
+    margin: 0;
+    padding: 0;
+  }
+  .buttons button:focus-visible + button {
+    background: none;
+    clip-path: none;
+    margin: 0;
+    padding: 0;
+  }
+  .buttons button:has(+ button:focus-visible) {
+    background: none;
+    clip-path: none;
+    margin: 0;
+    padding: 0;
+  }
+  button:hover,
+  button:active:not(:focus-visible) {
+    --_s: .75;
+  }
+  button:active {
+    box-shadow: inset 0 0 0 100vmax var(--_c);
+    color: #000000;
+  }
+div.buttons-1 {
+    display: grid;
+    place-content: center;
+    margin: 0;
+    font-family: system-ui, sans-serif;
+}
+.progress {
+    height: 35px;
+    width: 100%;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #000000;
+    margin-bottom: 15px;
+}
+ 
+.progress-bar {
+    height: 100%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    transition: width 0.25s;
+    border-radius: 5px;
+}
+ 
+.progress-bar-text {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #000000;
+}
+
+@media(max-width:991px){
+    body{
+        width: 100%;
+    }
+    header.header{
+        height: 100%;
+    }
+    section.contribucion{
+        display: block;
+        width: 100%;
+    }
+    div.objetivos{
+        position: relative;
+        display: block; 
+        text-align: center;
+    }
+    div.header-content{
+        height: 100%;
+    }
+    .menu{
+        padding: 20px;
+        
+    }  
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #161815;
+        display: none;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .header{
+        min-height: 0vh;
+        height: 100%;
+
+    }
+    .header-content{
+        flex-direction: column;
+        padding: 100PX 30px 30px 30px;
+        height: 100%;
+
+    }
+    .header-txt{
+        font-size: 100%;
+        text-align: center;
+        height: 100%;
+    }
+    .header-txt h1{
+        font-size: 80px;
+        line-height: 90px;
+        margin-bottom: 15px;
+    }
+    .header-txt p{
+        border:0;
+        padding: 0;
+        margin-bottom: 15px ;
+
+    }
+    .btn-1{
+        margin: 20px 0;
+    }
+    .header-img{
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 25px;
+    }
+    .header-img a{
+        margin: 0 10px;
+
+    }
+    .tours{
+        padding: 30px;
+    }
+    h2{
+        font-size: 60px;
+        line-height: 70px;
+    }
+    .tour-content{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+
+    }
+    div.video{
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .video, .cancion, .contribucion{
+        padding: 30px;
+    }
+    .video-content, .cancion-content{
+        flex-direction: column;
+    }
+    .video-1, .descripcion-1, .cancion-1, .contribucion-1{
+        width: 100%;
+        padding-right: 0;
+        text-align: center;
+    }
+    .v1, .v3{
+        width: 250px;
+        margin: 0 0 20px 0;
+
+    }
+    .footer-bg{
+        padding: 30px;
+    }
+    .textarea{
+        width: 250px !important;
+    }
+    .footer-txt{
+        padding: 30px;
+    }
+    div.flecha-bajar, div.flecha-bajar2{
+        border: 0;
+    }
+    div.flecha-bajar > img, div.flechar-bajar2 > img{
+        width: 0;
+    } 
+    video{
+        width: 100%;
+        height: auto;
+    }
+    .buttons{
+        width: 100%;
+        height: auto;
+    }
+    .contribuciones-txt{
+        display: block;
+        position: center;
+    }
+    .grupo-txt{
+        display: block;
+    }
+}

@@ -1,0 +1,249 @@
+<DOCTYPE html>
+    <HTML LANG="en">
+
+    <head>
+
+        <meta charset="UTF_8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>TakeYourTime</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function scrolldiv() {
+                var elem = document.getElementById("juego");
+                elem.scrollIntoView();
+            }
+            function scrolldiv1() {
+                var elem = document.getElementById("campaña");
+                elem.scrollIntoView();
+            }
+        </script>
+    </head>
+
+    <body>
+<!--HEADER-->
+        <header class="header" style="height: 100%;">
+            <div class="menu container" style="display: flex; align-items: left;justify-content: left;">
+                <a href="TakeYourTime.html" class="logo" style="margin: 1%;">TakeYourTime</a>
+            </div>
+            <div class="menu container" style="display: flex; align-items: center;justify-content: center;">
+               
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <img src="images/menu.png" class="menu-icono1" alt="" style="justify-content: none;">
+                </label>
+<!--NAVBAR-->
+                <nav class="navbar">
+                        <ul>
+                            <li><a href="#campaña">Campaña</a></a></li>
+                            <li><a href="FAQ.html">FAQ</a></a></li>
+                            <li><a href="Comentarios.html">Comentarios</a></a></li>
+                        </ul>
+                    
+                </nav>
+            </div>
+<!--Descripcion-->
+            <div class="header-content container" style="display: flex; align-items: center;justify-content: center; height: 100%;">
+                <div class="header-txt" style="display: flex; align-items: center;justify-content: center; height: 100%;">
+                    <div>
+                        
+                        <h1> Take Your Time </h1>
+                            <p>
+                                ¿Que oculta tu familia desde generaciones?¿Porque siempre se han mantenido tanto secretos en esta casa? 
+                                Recorre la mansión y habla con los integrantes de tu familia para descubrir los misterios que envuelven esta 
+                                mansión, a tu familia y sobre todo tu propio pasado.
+                            </p>
+<!--REDES-->
+                        <div class="header.img">
+                            <a href="https://instagram.com/coffee.gamees?igshid=ZWIzMWE5ZmU3Zg==">
+                                <img src="images/r4.svg" alt="">
+                            </a>
+                            <a href="https://twitter.com/takeeyourt91468?s=20">
+                                <img src="images/r2.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="flecha-bajar" onclick="scrolldiv()">
+                            <img src="images/flecha.png" alt="" onclick="scrolldiv()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+<!--DESCRIPCION-->
+        <main class="tours container" id="juego">
+            <p>
+                Take your time es un juego de aventura, de lógica y de misterio donde nos adentraremos en la historia de la familia 
+                West, una familia que de puertas afuera tienen una imagen perfecta e impoluta siendo la “familia modelo”. Sin embargo, 
+                nosotros Noah West sabemos que no todo es así y que en realidad la familia dista de ser perfecta manteniendo secretos 
+                entre ellos y mintiéndose. Todo cambiará cuando al poco tiempo de la muerte del padre de la familia West te encuentras 
+                entre tus cosas un reloj de bolsillo de plata (la herencia familiar) junto con una nota la cual dice “Hijo, descubre la 
+                verdad y no dejes que te pase lo que me pasó a mi”, tras esto exploraremos la mansión a la vez que iremos desenvolviendo los 
+                misterios que rodean a esta familia y a la misteriosa herencia familiar.
+            </p>
+            <div class="fondo">
+                <div class="t1">
+                    <img src="images/t1.jpg" alt="Imagen no disponible" style="height: 60%; width: auto;">
+                </div>  
+            </div>
+        </main>
+        
+
+<!--CAMPAÑA-->
+<a id="campaña"></a>
+<!--VIDEO/CANCION-->
+        
+        <section class="cancion">
+            <div class="buttons-1">
+                <div class="buttons">
+                    <button title="Click to show/hide content" type="button" onclick="if(document.getElementById('video') .style.display=='none') 
+                    {document.getElementById('video') .style.display='flex'}
+                    else{document.getElementById('video') .style.display='none'}">Vídeo</button>
+                    <button title="Click to show/hide content" type="button" onclick="if(document.getElementById('video') .style.display=='none') 
+                    {document.getElementById('video') .style.display='flex'}
+                    else{document.getElementById('video') .style.display='none'}">Canción</button>
+                </div>
+            </div>
+        
+            <div id="video" style="display:none; align-items: center;justify-content: center; margin-top: 20px;">
+                <video src="videos/v1.mp4" controls>
+                    Tu navegador no admite el elemento <code>video</code>.
+                  </video>
+            </div>
+        </section>
+                     
+<section class="contribucion" >
+    <div class="contribucion-content container" style="width:80%;">
+        <div class="contribucion-1">
+            <h3>CONTRIBUCIONES</h3>
+            <br>
+            <p>
+                Podeis ayudar a la realización del proyecto con cualquiera de las siguientes contribuciones.
+            </p>
+            <br>
+            <div class="contribuciones-txt">
+                <div class="contribuciones1"> 
+                    <p><b>Apoyo</b></p>
+                    <br>
+                    <p>No se recibirá ninguna copia del juego, pero ayudarás al desarrollo y recibirás noticias exclusivas</p>
+                    <br>
+                    <div> 
+                        <p>Contribuye a partir de 5€</p>
+                    </div>
+                </div>
+                <div class="contribuciones1"> 
+                    <p><b>Acceso anticipado</b></p>
+                    <br>
+                    <p>Consigue el juego antes de que salga</p>
+                    <br>
+                    <div> 
+                        <p>Contribuye a partir de 30€</p>
+                    </div>
+                </div>
+                <div class="contribuciones1"> 
+                    <p><b>Juego físico + poster</b></p>
+                    <br>
+                    <p>Consigue una copia física del juego junto con un póster exclusivo de 30x60 cm</p>
+                    <br>
+                    <div> 
+                        <p>Contribuye a partir de 40€</p>
+                    </div>
+                </div>
+                <div class="contribuciones2"> 
+                    <p><b>Juego físico + camiseta</b></p>
+                    <br>
+                    <p>Consigue una copia física del juego y la camiseta de Take Your Time</p>
+                    <br>
+                    <div> 
+                        <p>Contribuye a partir de 50€</p>
+                    </div>
+                </div>
+                <div class="contribuciones2"> 
+                    <p><b>Juego físico + Camiseta + Vinilo con la BSO del juego</b></p>
+                    <br>
+                    <p>Consigue una copia física del juego, la camiseta de Take Your Time y el vinilo exclusivo con la BSO del juego</p>
+                    <br>
+                    <div> 
+                        <p>Contribuye a partir de 70€</p>
+                    </div>
+                </div>
+                <div class="contribuciones2"> 
+                    <p><b>Juego físico + Poster + Camiseta + Vinilo con la BSO del juego + Figura exclusiva del reloj</b></p>
+                    <br>
+                    <p>Consigue una copia física del juego, el poster exclusivo, la camiseta de Take Your Time, el vinilo exclusivo con la BSO del juego y una figura del reloj del juego</p>
+                    <br>
+                    <div> 
+                        <p>Contribuye a partir de 80€</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div> 
+                         
+</section>
+<div class="objetivos">
+    <h3>Objetivo</h3>
+    <br>
+    <p>Fiannciacion minima para el desarrollo</p>
+    <p>70.000€</p>
+    <p>Traduccion a otros idiomas</p>
+    <p>80.000€</p>
+    <p>Recaudación actual</p>
+    <br>
+    <div class="progress">
+        <div class="progress-bar" style="width:75%;">
+            <span class="progress-bar-text">75%</span>
+        </div>
+    </div>
+</div>
+<h3 style="display: flex; align-items: center;justify-content: center;margin-bottom:10px;">GRUPO F</h3>
+<br>
+<div class="grupo-txt" style="width:80%;margin:0 auto">
+    <div class="grupo"> 
+        <p><b>Ángela Sánchez</b></p>
+        <br>
+        <p>Programación y marketing</p>
+        <br>
+        <p>Diseño y desarrollo de HTML y Instragram</p>
+    </div>
+    <div class="grupo"> 
+        <p><b>Claudia Bravo</b></p>
+        <br>
+        <p>Arte y marketing</p>
+        <br>
+        <p>Ilustración y Twite</p>
+    </div>
+    <div class="grupo"> 
+        <p><b>Laura Manso</b></p>
+        <br>
+        <p>Arte</p>
+        <br>
+        <p>Musica y trailer</p>    
+    </div>
+    <div class="grupo" style="margin-bottom:10%;"> 
+        <p><b>Sergio Ruiz</b></p>
+        <br>
+        <p>Guionista y Grafismo</p>
+        <br>
+        <p>Historia y logo</p>
+    </div>
+</div>
+
+<!--FOOTER-->
+        <footer>
+            
+            <div class="footer-txt">
+                <p> 
+                    ATENCIÓN: Esta página simula la campaña de microfinanciación
+                    de un videojuego ficticio y no representa un producto real.
+                    Práctica de Multimedia, 1º GDDV - Curso 22/23 (Quintana), URJC.
+                    La URJC no se hace responsable del contenido expuesto por el autor.
+                 </p>
+            </div>
+
+            </div>    
+        </footer>
+
+    </body>
+
+    </html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    <link rel="stylesheet" href="style-faq.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <p><a href="index.html" style="text-decoration: none;">Take Your Time</a></p>
+      <h1>Frequently Asked Questions</h1>
+
+      <div class="faq">
+        <button class="accordion">
+          ¿Cuándo podré jugar al juego?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            El lanzamiento del juego está programado para marzo de 2024. Todavía
+            está por confirmar la fecha oficial, pero los participantes de la campaña recibirán
+            el juego en exclusiva 2 días antes del lanzamiento oficial.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          ¿Qué métodos de pago se aceptan?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Esta campaña acepta pagos con mastercard, Paypal y transferencias
+            bancarias.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          ¿En qué plataformas estará disponible Take your time?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            El juego estará disponible para PC, Playstation 4 y Xbox one.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          ¿Tiene alguna ventaja participar en la campaña de financiación?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Sí, los participantes de esta campaña de financiación recibirán el juego
+            en exclusiva 2 días antes de su lanzamiento oficial. Además todos los packs de
+            contribuciones incluyen merchandising, desde posters hasta una figura exclusiva
+            de Take Your Time.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          ¿Tendrá un modo de juego online?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            No, de momento no se ha planeado ningún modo de juego online para
+            Take your Time.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          ¿Estará el juego en otros idiomas?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Take your time estará disponible inicialmente en español y en inglés, pero
+            nos gustaría traducirlo a otros idiomas más adelante como francés, chino o
+            árabe.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          ¿Habrá compras dentro del juego?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            No.
+          </p>
+        </div>
+      </div>
+    </div>
+    <h2 style="display: flex; align-items: center;justify-content: center; font-size: 2em; margin-top: 20px;">¿Tienes una pregunta diferente?</h2>
+            <form>
+                <div class="campo-1">
+                    <input class="campo" type="text" placeholder="Nombre">
+                    <input class="campo" type="email" placeholder="Correo">
+                    <br>
+                    <textarea class="campo" cols="30" rows="10" placeholder="Texto"></textarea>
+                    <br>
+                    <p>Tu duda será enviada al correo de TakeYourTime@gmail.com</p>
+                    <input type="submit" class="btn-1" value="Enviar">
+                </div>
+                
+            </form>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          this.parentElement.classList.toggle("active");
+
+          var pannel = this.nextElementSibling;
+
+          if (pannel.style.display === "block") {
+            pannel.style.display = "none";
+          } else {
+            pannel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
