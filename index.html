@@ -101,9 +101,9 @@
                     <button title="Click to show/hide content" type="button" onclick="if(document.getElementById('video') .style.display=='none') 
                     {document.getElementById('video') .style.display='flex'}
                     else{document.getElementById('video') .style.display='none'}">Vídeo</button>
-                    <button title="Click to show/hide content" type="button" onclick="if(document.getElementById('video') .style.display=='none') 
-                    {document.getElementById('video') .style.display='flex'}
-                    else{document.getElementById('video') .style.display='none'}">Canción</button>
+                    <button title="Click to show/hide content" type="button" onclick="if(document.getElementById('cancion') .style.display=='none') 
+                    {document.getElementById('cancion') .style.display='flex'}
+                    else{document.getElementById('cancion') .style.display='none'}">Canción</button>
                 </div>
             </div>
         
@@ -111,6 +111,11 @@
                 <video src="videos/v1.mp4" controls style="width: 75%;">
                     Tu navegador no admite el elemento <code>video</code>.
                   </video>
+            </div>
+            <div id="cancion" style="display:none; align-items: center;justify-content: center; margin-top: 20px;">
+                <audio src="cancion/Take your time_main theme.wav" controls>
+                    Your browser does not support the <code>audio</code> element.
+                </audio>
             </div>
         </section>
                      
